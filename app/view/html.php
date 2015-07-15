@@ -1,4 +1,6 @@
-<?php namespace View;
+<?php
+
+namespace View;
 
 class Html extends \Template
 {

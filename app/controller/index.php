@@ -1,4 +1,6 @@
-<?php namespace Controller;
+<?php
+
+namespace Controller;
 
 class Index extends \Controller
 {

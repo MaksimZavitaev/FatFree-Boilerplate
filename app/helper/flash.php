@@ -15,7 +15,7 @@ class Flash extends \Prefab
     }
 
     /**
-     * Добавляем сообщение
+     * Р”РѕР±Р°РІР»СЏРµРј СЃРѕРѕР±С‰РµРЅРёРµ
      * @param $text
      * @param bool|string $status
      */
@@ -26,7 +26,7 @@ class Flash extends \Prefab
     }
 
     /**
-     * Получаем сообщение
+     * РџРѕР»СѓС‡Р°РµРј СЃРѕРѕР±С‰РµРЅРёРµ
      * @return mixed
      */
     public function getMessages()
@@ -37,7 +37,7 @@ class Flash extends \Prefab
     }
 
     /**
-     * Очищаем массив сообщений
+     * РћС‡РёС‰Р°РµРј РјР°СЃСЃРёРІ СЃРѕРѕР±С‰РµРЅРёР№
      */
     public function clearMessages()
     {
@@ -45,7 +45,7 @@ class Flash extends \Prefab
     }
 
     /**
-     * Проверка на наличие сообщений в массиве
+     * РџСЂРѕРІРµСЂРєР° РЅР° РЅР°Р»РёС‡РёРµ СЃРѕРѕР±С‰РµРЅРёР№ РІ РјР°СЃСЃРёРІРµ
      * @return bool
      */
     public function hasMessages()
@@ -55,7 +55,7 @@ class Flash extends \Prefab
     }
 
     /**
-     * Зажаем сообщение с ключем
+     * Р—Р°Р¶Р°РµРј СЃРѕРѕР±С‰РµРЅРёРµ СЃ РєР»СЋС‡РµРј
      * @param $key
      * @param null $val
      */
@@ -65,7 +65,7 @@ class Flash extends \Prefab
     }
 
     /**
-     * Получаем сообщение по ключу
+     * РџРѕР»СѓС‡Р°РµРј СЃРѕРѕР±С‰РµРЅРёРµ РїРѕ РєР»СЋС‡Сѓ
      * @param $key
      * @return mixed|string
      */
