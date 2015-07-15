@@ -1,0 +1,15 @@
+{
+  "name": "MaximZavitaev/FatFreeBoilerplate",
+  "description": "Fat Free Framework Boilerplate",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Maxim Zavitaev",
+      "email": "vskweb@gmail.com"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "3.5.0"
+  }
+}
