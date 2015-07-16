@@ -60,8 +60,8 @@ class Settings extends \Prefab
             $sql = 'INSERT INTO `settings` (`key`, `value`) VALUES (:key, :value)';
         }
 
-        $this->clear();
-        return $this->fw->get('db.instance')->exec($sql, array(':key' => $key, ':value' => $value));
+        $result = $this->fw->get('db.instance')->exec($sql, array(':key' => $key, ':value' => $value));
+        return ($this->clear() && $this->getSettings()) ? $result : false;
     }
 
     /**
@@ -73,9 +73,7 @@ class Settings extends \Prefab
     {
         if (isset($this->settings[$key])) {
             $result = $this->fw->get('db.instance')->exec('DELETE FROM settings WHERE `key` = :key', array(':key' => $key));
-            $this->clear();
-            $this->getSettings();
-            return $result;
+            return ($this->clear() && $this->getSettings()) ? $result : false;
         }
 
         return false;
