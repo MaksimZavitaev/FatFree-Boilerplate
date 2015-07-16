@@ -21,5 +21,7 @@ $fw->set('db.instance', new \DB\SQL(
     $fw->get('db.pass')
 ));
 \Helper\Settings::instance();
+\Helper\Settings::instance()->delete('site.name');
+\Helper\Settings::instance()->set('site.name', 'FatFree Framework Boilerplate');
 
 $fw->run();

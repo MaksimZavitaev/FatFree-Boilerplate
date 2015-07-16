@@ -64,7 +64,22 @@ class Settings extends \Prefab
         return $this->fw->get('db.instance')->exec($sql, array(':key' => $key, ':value' => $value));
     }
 
-    // TODO: Описать метод для удаления настроек из БД
+    /**
+     * Удаление настройки из БД
+     * @param $key
+     * @return bool
+     */
+    function delete($key)
+    {
+        if (isset($this->settings[$key])) {
+            $result = $this->fw->get('db.instance')->exec('DELETE FROM settings WHERE `key` = :key', array(':key' => $key));
+            $this->clear();
+            $this->getSettings();
+            return $result;
+        }
+
+        return false;
+    }
 
     /**
      * Очищает кеш
