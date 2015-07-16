@@ -55,7 +55,7 @@ class Settings extends \Prefab
     function set($key, $value)
     {
         if (isset($this->settings[$key])) {
-            $sql = 'UPDATE `settings` SET `value` = :valiue WHERE `key` = :key';
+            $sql = 'UPDATE `settings` SET `value` = :value WHERE `key` = :key';
         } else {
             $sql = 'INSERT INTO `settings` (`key`, `value`) VALUES (:key, :value)';
         }
